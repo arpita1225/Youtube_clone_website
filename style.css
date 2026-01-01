@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.border{border:2px solid transparent;}
+.nav-bar{
+    height:56px;
+    width:100%;
+    color:black;
+    font-size: 1.6rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 16px;
+}
+
+.box1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:24px;
+}
+.box2{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+
+}
+.box3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+.nav-bar-logo{
+    display:flex;
+    align-items:center;
+    
+}
+.nav-search{
+    display:flex;
+    align-items:center;
+    border:1px solid #ccc;
+    width:50%;
+    border-top-left-radius:10% ;
+    border-bottom-right-radius:10% ;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius:10% ;
+    height: 40px;
+    
+    border-radius:24px;  
+    overflow: hidden;
+    /* clips children to parent’s rounded shape. */
+}
+.nav-bar-logo{
+    display:flex;
+    align-items:flex-start;   /* 🔑 important */
+    position:relative;
+}
+
+.logo-country{
+    font-size:10px;
+    margin-left:4px;
+    margin-top:-4px;          /* 🔑 lifts it up */
+    color:#606060;
+}
+
+.nav-create-vdo{
+    display:flex;
+    align-items:center;
+    font-size: 1rem;
+}
+.nav-account{
+    height:32px;
+    width:32px;
+}
+
+.logo-txt{
+    display:flex;
+    align-items: flex-start;
+}
+.logo-txt p{
+    font-size: 10px;
+}
+.acc-box {background-color: #BF360C;
+border-radius: 50%;
+color:#FFFFFF;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+height:100%;
+width:100%;
+font-size: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+input{
+    height:36px;
+    border:none;
+    outline:none;
+    font-size: 1rem;
+}
+.search-input{
+    flex:1;              /* fills available space */
+    padding:0 16px;
+    font-size:16px;
+    
+    border:none;
+    outline:none;
+    background:transparent;
+
+
+}
+.search-icon{padding:0 20px;
+  border-left:1px solid #ccc;
+  height: 100%;
+  background-color: #F0F0F0;
+ /* Only right side rounded
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    /* Ensure left side stays straight */
+    /* border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    */} 
+
+
+
+   .nav-create-vdo p{
+    position:relative;
+    top:-1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+   }
+   .nav-create-vdo {
+    background-color:#E5E5E5 ;
+    border-radius: 24px;
+   }
+   .mic-box{
+   background-color:#D9D9D9;
+   border-radius: 50%;
+   }
+   .nav-notify{
+    border-radius:50% ;
+   }
+   .nav-notify:hover{background-color:#CCCCCC;
+   }
+   .nav-home :hover{
+    background-color:#CCCCCC;
+   }
+   .search-icon:hover{
+    background-color:#CCCCCC;
+
+   }
+   .nav-create-vdo :hover{
+    background-color:#CCCCCC;
+   }
+   .mic-box:hover{
+    background-color:#CCCCCC;
+   }
+   .side-bar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items:center ; */
+    gap:30px;
+    margin-left:13px ;
+    margin-top: 20px;
+    font-size:12px;
+    width:64px;
+   }
+   .side-bar > div{
+    width: 48px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.65rem;
+
+}
+  
+.nav2-filters{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    gap:4px;
+    margin-left:64px ;
+    padding:8px 16px;
+    width:94.5%;
+
+    top: 56px;          /* exactly below nav-bar */
+    left: 4px;         /* width of sidebar */
+    right: 0;
+    height: 48px;
+    background: #ffffff;
+    z-index: 10;
+    /* margin-top: 9px; */
+}
+
+.filters-bar{
+    display: flex;
+    gap:12px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    flex:1;
+    padding: 4px 0;
+
+}
+
+.chip{
+    padding:6px 14px;
+    border-radius:7px;
+    border:none;
+    background-color: #f0f0f0;
+    white-space:nowrap;
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-size:0.88rem;
+}
+.scroll-button{
+    border:none;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor:pointer;
+    font-size: 18px;
+    padding:6px;
+}
+.scroll-button:hover{
+    background-color:#cccccc;
+}
+.video-card{
+    width:100%;
+    cursor:pointer;
+}
+.thumbnail{
+    position:relative;
+    height:265px;
+    
+}
+.thumbnail img{
+    width:100%;
+    border-radius:12px;
+    height: 100%;
+}
+.duration{
+    position:absolute;
+    bottom:6px;
+    right:6px;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    font-size:12px;
+    padding:2px 6px;
+    border-radius:4px;
+}
+.video-info{
+    display:flex;
+    gap:12px;
+    margin-top:10px;
+}
+.channel-icon{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    background-size:contain;
+    /* display:flex;
+    align-items:center;
+    justify-content:center; */
+
+}
+.channel-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+.video-info h4{
+    font-size:14px;
+    margin-bottom:4px;
+    font-size:1rem ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.video-info p{
+    
+    color:#606060;
+}
+.Channel-name p{
+font-family: Arial, Helvetica, sans-serif;
+font-size:0.6rem;
+}
+.views_upload-time p{
+    font-family: Arial, Helvetica, sans-serif;
+font-size:0.4rem;
+}
+.video-grid{
+     margin-left:72px;/*sidebar space */
+     margin-top:112px;
+     display:grid;
+     grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+     gap:24px;
+     padding:24px;
+}
+/* grid-template-columns:
+Defines how many columns the grid should have and their size.
+
+repeat(...)
+Instead of writing:
+grid-template-columns: 1fr 1fr 1fr 1fr;
+We let CSS decide dynamically.
+
+auto-fill
+Means:
+“Create as many columns as will fit in the available width.”
+
+minmax(320px, 1fr)
+This defines the size of each column.
+minimum: 320px
+→ a video card should never be smaller than this
+maximum: 1fr
+→ take equal share of available spaceFinal meaning of the whole line
+
+“Create as many columns as fit on the screen, each at least 320px wide, and stretch them evenly.”gap: 24px;
+What it does
+Adds space between grid items
+Both:
+row gap
+column gap
+
+padding: 24px;
+What it does
+Adds space inside the grid container
+Keeps videos away from screen edges */
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+.nav-bar{
+    height: 56px;
+    flex-shrink: 0;
+}
+.main-content{
+    display: flex;
+    height: calc(100vh - 56px); /* below navbar */
+}
+.side-bar{
+    width: 64px;
+    flex-shrink: 0;
+    background: #fff;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.nav2-filters{
+    height: 48px;
+    flex-shrink: 0;
+    background: #fff;
+}
+.video-scroll{
+    flex: 1;
+    overflow-y: auto;
+}
+.video-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
